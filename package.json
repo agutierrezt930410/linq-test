@@ -1,0 +1,38 @@
+{
+  "name": "linq",
+  "version": "1.0.0",
+  "description": "OOP desing for linQ test",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "eslint src --ext .ts --fix",
+    "build": "tsc && tsc-alias",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "watch": "./node_modules/nodemon/bin/nodemon.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "oop",
+    "design",
+    "ts",
+    "linq"
+  ],
+  "author": "Andres Gutierrez <agutierrezt@slabcode.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "27.4.1",
+    "@types/luxon": "2.3.1",
+    "@types/node": "17.0.10",
+    "@typescript-eslint/eslint-plugin": "5.10.0",
+    "@typescript-eslint/parser": "5.10.0",
+    "eslint": "8.7.0",
+    "jest": "27.5.1",
+    "nodemon": "2.0.15",
+    "ts-jest": "27.1.3",
+    "tsc-alias": "1.6.4",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "luxon": "2.3.1"
+  }
+}
